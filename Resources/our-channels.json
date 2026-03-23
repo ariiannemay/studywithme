@@ -1,0 +1,54 @@
+{
+  "title": "Our Channels",
+  "groups": [
+    {
+      "name": "Core Study Spaces",
+      "description": "The rooms members return to most often for focused work, accountability, and consistent study habits.",
+      "channels": [
+        "Study Lounge Rooms for silent general study",
+        "Study-On-Cam Rooms for strict on-cam accountability",
+        "Pomodoro Rooms with automated focus and break timers",
+        "Voice Study Rooms for tutoring and collaborative sessions",
+        "Custom Study Rooms for flexible private or semi-private setups"
+      ]
+    },
+    {
+      "name": "Libraries and Resources",
+      "description": "Spaces built to support both academic needs and lighter reading.",
+      "channels": [
+        "Academic library spaces for study support and learning materials",
+        "Leisure library spaces for reading beyond coursework",
+        "Resource-sharing spaces for useful study systems and references"
+      ]
+    },
+    {
+      "name": "Community and Wellness",
+      "description": "Channels that help the server stay human, supportive, and sustainable.",
+      "channels": [
+        "Interest Clubs for members with shared hobbies and interests",
+        "Freedom Wall for anonymous journaling and mental health expression",
+        "Supportive community spaces for encouragement and connection"
+      ]
+    },
+    {
+      "name": "Recognition and Participation",
+      "description": "Spaces that celebrate consistency and meaningful contribution.",
+      "channels": [
+        "Weekly leaderboard spaces",
+        "Monthly recognition spaces",
+        "SWM Hall of Legends",
+        "SWM Hall of Class I Users",
+        "Voting perks and participation incentives"
+      ]
+    },
+    {
+      "name": "Future Expansion",
+      "description": "Planned growth areas for the server as the website and community continue to evolve.",
+      "channels": [
+        "Course-specific channels",
+        "Expanded app accountability groups",
+        "More detailed guides for finding the right spaces quickly"
+      ]
+    }
+  ]
+}

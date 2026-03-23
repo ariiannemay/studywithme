@@ -1,0 +1,59 @@
+{
+  "title": "Server Guide",
+  "subtitle": "A 24/7 online productivity-focused community for students, professionals, and lifelong learners.",
+  "intro": "StudyWithMe is a 24/7 online productivity-focused community where students, professionals, and lifelong learners from around the world come together for focus, support, motivation, and accountability.",
+  "notices": [
+    "If you do not yet have access to chat and voice channels, complete verification in verify-here.",
+    "If you are a newcomer to the server, you can only enable your camera, stream, or speak in voice channels 12 hours after joining."
+  ],
+  "voiceChannelTypes": [
+    {
+      "name": "Study Lounge Rooms",
+      "shortName": "SRs",
+      "description": "General-purpose silent study rooms where you may turn on your camera, screenshare, or stay on voice. These rooms are muted by default."
+    },
+    {
+      "name": "Study-On-Cam Rooms",
+      "shortName": "SORs",
+      "description": "Silent rooms strictly for on-cam study. Users are required to keep their camera on while inside. Members should read sor-rules before joining. These rooms are muted by default."
+    },
+    {
+      "name": "Custom Study Rooms",
+      "shortName": "CSRs",
+      "description": "Customizable rooms that can be renamed, muted or unmuted, limited, locked, or unlocked. Anyone can join an unlocked CSR, but only members with a Class IV role or higher can create one. Members should read csr-rules before joining."
+    },
+    {
+      "name": "Pomodoro Rooms",
+      "shortName": "POMO",
+      "description": "Rooms equipped with a Pomodoro timer powered by LionBot, with automated announcements for focus sessions and breaks. These rooms are muted."
+    },
+    {
+      "name": "Voice Study Rooms",
+      "shortName": "VSRs",
+      "description": "Study rooms where members may unmute and communicate. These are ideal for tutoring sessions or collaborative studying. Members should read vsr-rules before joining."
+    }
+  ],
+  "howToStart": [
+    "Choose any study room, enter it, and begin focusing.",
+    "When you are done, check your study hours and rank using the /profile command in bot-spam.",
+    "You can deposit your study hours to earn cookies and unlock roles in the Cookie Zone."
+  ],
+  "staffRoles": [
+    {
+      "role": "SWM Chairman",
+      "description": "The Chairman is the server owner and overall head of StudyWithMe. They provide direction for the community, oversee major decisions, and ensure that the server continues to grow in line with its purpose."
+    },
+    {
+      "role": "Student Council",
+      "description": "The Student Council serves as the administrative team of the server. They supervise staff operations, review applications and promotions, address significant concerns, and help maintain structure, fairness, and consistency across the community."
+    },
+    {
+      "role": "Class Representative",
+      "description": "A Class Representative oversees the overall flow and development of the server. They moderate chats, enforce rules, assist members, manage server systems and features, oversee leaderboards, handle technical configurations, and organize community events."
+    },
+    {
+      "role": "Buddy Patrol",
+      "description": "A Buddy Patrol serves as the frontline moderator of the server. They monitor activity, respond to reports, delete inappropriate messages, and mute, time out, kick, or ban disruptive members when necessary."
+    }
+  ]
+}

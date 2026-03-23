@@ -1,0 +1,37 @@
+{
+  "title": "FAQ",
+  "items": [
+    {
+      "question": "What is StudyWithMe?",
+      "answer": "StudyWithMe is a global Discord server centered around focused study, accountability, and a supportive environment for students, professionals, and exam takers."
+    },
+    {
+      "question": "Why does SWM use member verification?",
+      "answer": "Verification helps protect the server and maintain a safer environment. Strix manages the process and removes users who do not complete verification within 48 hours."
+    },
+    {
+      "question": "What kinds of study rooms are available?",
+      "answer": "Members can choose from Study Lounge Rooms, Study-On-Cam Rooms, Custom Study Rooms, Pomodoro Rooms, and Voice Study Rooms, depending on how they prefer to work."
+    },
+    {
+      "question": "What are the main study tools inside the server?",
+      "answer": "SWM uses native tools like plantwithme, studywithme, and Strix, alongside accountability groups for apps such as Forest and YPT."
+    },
+    {
+      "question": "Does SWM offer anything beyond study rooms?",
+      "answer": "Yes. The server also includes wellness and community spaces such as Interest Clubs, a Freedom Wall, digital library areas, and recognition systems."
+    },
+    {
+      "question": "How do leaderboards and recognition work?",
+      "answer": "SWM highlights members through weekly leaderboards, monthly recognition, the Hall of Legends, Hall of Class I Users, and voting-based perks."
+    },
+    {
+      "question": "Are there spaces for different kinds of students?",
+      "answer": "Yes. SWM includes a variety of channels for focused study, accountability, resources, support, and future course-specific spaces."
+    },
+    {
+      "question": "Will more detailed guides be added here?",
+      "answer": "Yes. The website can keep expanding with fuller reference pages, deeper guides, and more detailed resource sections over time."
+    }
+  ]
+}
