@@ -9,7 +9,7 @@
   >
   <title>Study With Me | Discord Community</title>
   <link rel="icon" type="image/png" href="./Images/SWM-Guild-Icon-Flat.png">
-  <link rel="preconnect" href="ahttps://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
@@ -34,7 +34,7 @@
       --button-text: #06283e;
       --card-glow: rgba(122, 221, 244, 0.26);
       --hero-overlay: linear-gradient(160deg, rgba(1, 90, 137, 0.84), rgba(1, 90, 137, 0.52));
-      --section-pad: clamp(4.25rem, 7vw, 7rem);
+      --section-pad: clamp(5.5rem, 8vw, 8.5rem);
       --radius-xl: 32px;
       --radius-lg: 24px;
       --radius-md: 18px;
@@ -183,7 +183,7 @@
     .section-heading {
       margin: 1rem 0 0.85rem;
       font-family: "Fraunces", serif;
-      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-size: clamp(1.5rem, 4vw, 3.5rem);
       line-height: 1.05;
       letter-spacing: -0.04em;
     }
@@ -194,6 +194,30 @@
       color: var(--ink-soft);
       font-size: 0.98rem;
       line-height: 1.8;
+    }
+
+    .section-intro {
+      width: min(100%, 54rem);
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section-intro .eyebrow {
+      margin: 0 auto;
+    }
+
+.section-intro .section-heading {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    
+    .section-intro .section-copy {
+      max-width: 48rem;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.03rem;
     }
 
     .site-header {
@@ -253,14 +277,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 0.25rem;
+      gap: 0.15rem;
       flex-wrap: wrap;
     }
 
     .nav-links a {
-      padding: 0.75rem 0.95rem;
+      padding: 0.62rem 0.72rem;
       border-radius: 999px;
-      font-size: 0.83rem;
+      font-size: 0.76rem;
       font-weight: 600;
       color: var(--ink-soft);
       transition: 180ms ease;
@@ -390,6 +414,7 @@
       flex-wrap: wrap;
       gap: 0.9rem;
       margin-top: 1.7rem;
+      max-width: 22rem;
     }
 
     .hero-meta {
@@ -397,6 +422,7 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 1rem;
       margin-top: 2rem;
+      max-width: 54rem;
     }
 
     .stat-card {
@@ -431,7 +457,8 @@
       position: relative;
       height: 100%;
       min-height: 36rem;
-      padding: 1.25rem;
+      padding: 0.9rem;
+      display: flex;
       border-radius: var(--radius-xl);
       border: 1px solid rgba(255, 255, 255, 0.28);
       background:
@@ -453,7 +480,8 @@
 
     .hero-banner {
       width: 100%;
-      height: 19rem;
+      height: 100%;
+      min-height: 34rem;
       object-fit: cover;
       border-radius: calc(var(--radius-xl) - 8px);
       border: 1px solid rgba(255, 255, 255, 0.24);
@@ -531,12 +559,10 @@
     }
 
     .feature-grid,
-    .resource-grid,
     .contact-grid,
     .about-grid,
     .leaderboard-grid,
     .guide-grid,
-    .channel-grid,
     .handbook-grid {
       display: grid;
       gap: 1.2rem;
@@ -548,12 +574,10 @@
     }
 
     .feature-card,
-    .resource-card,
     .contact-card,
     .about-card,
     .leaderboard-card,
     .guide-card,
-    .channel-card,
     .rule-card,
     .join-panel {
       position: relative;
@@ -567,7 +591,6 @@
     }
 
     .feature-card::before,
-    .resource-card::before,
     .leaderboard-card::before,
     .join-panel::before {
       content: "";
@@ -606,32 +629,6 @@
       line-height: 1.75;
     }
 
-    .resource-grid {
-      margin-top: 2rem;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .resource-card {
-      padding: 1rem;
-    }
-
-    .resource-media {
-      border-radius: 22px;
-      overflow: hidden;
-      margin-bottom: 1rem;
-      min-height: 14rem;
-      border: 1px solid var(--line);
-      background: linear-gradient(145deg, rgba(122, 221, 244, 0.22), rgba(255, 255, 255, 0.2));
-    }
-
-    .resource-media img {
-      width: 100%;
-      height: 100%;
-      min-height: 14rem;
-      object-fit: cover;
-    }
-
-    .resource-topline,
     .leaderboard-topline,
     .contact-topline {
       display: inline-flex;
@@ -642,13 +639,6 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-    }
-
-    .resource-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.7rem;
-      margin-top: 1rem;
     }
 
     .pill {
@@ -727,17 +717,40 @@
       line-height: 1.8;
     }
 
+    .faq-answer p {
+      margin: 0 0 0.8rem;
+    }
+
+    .faq-answer p:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-answer ul {
+      margin: 0.2rem 0 0;
+      padding-left: 1.1rem;
+      color: var(--ink-soft);
+    }
+
+    .faq-answer li {
+      margin: 0.45rem 0;
+    }
+
+    .faq-item-wide {
+      grid-column: 1 / -1;
+      width: min(100%, 48rem);
+      margin: 0 auto;
+    }
+
     .guide-grid,
-    .channel-grid,
     .handbook-grid,
     .leaderboard-grid,
     .about-grid,
     .contact-grid {
-      margin-top: 2rem;
+      margin-top: 2.75rem;
     }
 
     .guide-grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .guide-step {
@@ -755,7 +768,6 @@
     }
 
     .guide-card ul,
-    .channel-card ul,
     .rule-card ul,
     .leaderboard-card ul,
     .contact-card ul {
@@ -767,7 +779,6 @@
     }
 
     .guide-card li,
-    .channel-card li,
     .rule-card li,
     .leaderboard-card li,
     .contact-card li {
@@ -780,7 +791,6 @@
     }
 
     .guide-card li::before,
-    .channel-card li::before,
     .rule-card li::before,
     .leaderboard-card li::before,
     .contact-card li::before {
@@ -793,21 +803,112 @@
       background: linear-gradient(135deg, var(--sky), var(--teal));
     }
 
-    .channel-grid {
-      grid-template-columns: 1.2fr 1fr 1fr;
+    .channels-accordion {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2.75rem;
     }
 
-    .channel-card.featured {
-      background:
-        linear-gradient(180deg, rgba(122, 221, 244, 0.14), transparent 48%),
-        var(--paper);
+    .channel-group {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      backdrop-filter: blur(18px);
     }
 
-    .channel-foot {
-      margin-top: 1rem;
+    .channel-group summary {
+      list-style: none;
+      cursor: pointer;
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.15rem 1.3rem;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .channel-group summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .channel-group summary::after {
+      content: "+";
+      width: 2rem;
+      height: 2rem;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--teal);
+      background: rgba(122, 221, 244, 0.12);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .channel-group[open] summary::after {
+      content: "−";
+      background: rgba(252, 224, 0, 0.22);
+    }
+
+    .channel-group-body {
+      padding: 0 1.3rem 1.3rem;
+    }
+
+    .channel-group-copy {
+      margin: 0 0 1rem;
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+      line-height: 1.8;
+    }
+
+    .channel-group-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 2.3rem;
+      padding: 0.35rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(252, 224, 0, 0.2);
+      color: var(--teal);
+      font-size: 0.75rem;
+      font-weight: 800;
+      margin-right: 0.75rem;
+    }
+
+    .channel-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.9rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .channel-list li {
+      display: block;
+      padding: 1rem;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.54);
+    }
+
+    html[data-theme="dark"] .channel-list li {
+      background: rgba(8, 29, 41, 0.82);
+    }
+
+    .channel-list strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .channel-list span {
+      color: var(--ink-soft);
+      font-size: 0.82rem;
+      line-height: 1.7;
     }
 
     .handbook-grid,
@@ -974,8 +1075,7 @@
 
     @media (max-width: 1100px) {
       .hero-grid,
-      .join-wrap,
-      .channel-grid {
+      .join-wrap {
         grid-template-columns: 1fr;
       }
 
@@ -986,6 +1086,10 @@
       .about-grid,
       .contact-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .channel-list {
+        grid-template-columns: 1fr;
       }
 
       .hero-meta {
@@ -1038,7 +1142,6 @@
 
       .hero-meta,
       .feature-grid,
-      .resource-grid,
       .faq-grid,
       .guide-grid,
       .handbook-grid,
@@ -1046,7 +1149,8 @@
       .about-grid,
       .contact-grid,
       .join-stats,
-      .hero-feature-strip {
+      .hero-feature-strip,
+      .channel-list {
         grid-template-columns: 1fr;
       }
 
@@ -1056,6 +1160,7 @@
 
       .hero-banner {
         height: 16rem;
+        min-height: 16rem;
       }
 
       .hero-panel-top {
@@ -1094,11 +1199,10 @@
           </a>
 
           <nav class="nav-links" aria-label="Main navigation">
-            <a href="#resources">Resources</a>
-            <a href="#faq">FAQ</a>
+            <a href="#highlights">Community Highlights</a>
             <a href="#guide">Server Guide</a>
+            <a href="#handbook">Student Handbook</a>
             <a href="#channels">Our Channels</a>
-            <a href="#handbook">Handbook</a>
             <a href="#about">About Us</a>
           </nav>
 
@@ -1132,15 +1236,15 @@
               </article>
               <article class="stat-card">
                 <div class="stat-number">48 hrs</div>
-                <div class="stat-label">verification window managed  for safer community access</div>
+                <div class="stat-label">verification system in place for safer community access</div>
               </article>
               <article class="stat-card">
                 <div class="stat-number">24/7</div>
-                <div class="stat-label">study energy across time zones, focus rooms, and accountability spaces</div>
+                <div class="stat-label">study energy across time zones and accountability spaces</div>
               </article>
               <article class="stat-card">
-                <div class="stat-number">Native</div>
-                <div class="stat-label">bots and systems made for SWM: plantwithme, studywithme, and Strix</div>
+                <div class="stat-number">Custom</div>
+                <div class="stat-label">bots including plantwithme, studywithme, and our verification bot</div>
               </article>
             </div>
           </div>
@@ -1150,55 +1254,39 @@
             <div class="floating-orb orb-b"></div>
             <div class="hero-card">
               <img class="hero-banner" src="./Images/SWM-Guild-Banner.gif" alt="Study With Me Discord banner">
-              <div class="hero-panel hero-panel-top">
-                <strong>Verified membership and guided onboarding</strong>
-                <span>Strix keeps the server secure and autokicks users who do not complete verification within 48 hours.</span>
-              </div>
-              <div class="hero-feature-strip">
-                <div class="hero-feature">
-                  <strong>Study app groups</strong>
-                  Forest, YPT, and future accountability circles can live alongside your study routine.
-                </div>
-                <div class="hero-feature">
-                  <strong>Server-made tools</strong>
-                  Plantwithme and studywithme keep participation native to the community experience.
-                </div>
-              </div>
-              <div class="hero-panel hero-panel-bottom">
-                <strong>Monthly recognition, weekly leaderboards, and community perks</strong>
-                <span>SWM rewards effort, consistency, and contribution through public recognition systems and voting-based privileges.</span>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Features -->
-      <section>
+      <section id="highlights">
         <div class="container">
-          <div class="eyebrow reveal">Community Highlights</div>
-          <h2 class="section-heading reveal">Everything in SWM is built to make studying feel sustainable.</h2>
-          <p class="section-copy reveal">
-            The server combines structure, safety, personality, and practical student tools. This first website version highlights the full ecosystem while leaving plenty of room for more guides and references to grow over time.
-          </p>
+          <div class="section-intro reveal">
+            <div class="eyebrow">Community Highlights</div>
+            <h2 class="section-heading">Everything in SWM is built to make studying feel sustainable.</h2>
+            <p class="section-copy">
+              The server combines structure, safety, personality, and practical tools so members can stay focused without feeling isolated. These are the systems that give SWM its rhythm.
+            </p>
+          </div>
 
           <div class="feature-grid">
             <article class="feature-card reveal">
               <div class="feature-icon">🌍</div>
-              <h3 class="card-title">40,000+ Members Worldwide</h3>
-              <p class="card-copy">A large international student network means active study energy across different schedules, goals, and time zones.</p>
+              <h3 class="card-title">40,000+ Members</h3>
+              <p class="card-copy">Active study energy across different schedules, goals, and time zones.</p>
             </article>
 
             <article class="feature-card reveal">
               <div class="feature-icon">🛡️</div>
               <h3 class="card-title">Securely Verified Members</h3>
-              <p class="card-copy">Entry is guided through verification so the community stays safer, more intentional, and easier to trust.</p>
+              <p class="card-copy">Guided verification to make the community stay safer and easier to trust.</p>
             </article>
 
             <article class="feature-card reveal">
               <div class="feature-icon">✨</div>
               <h3 class="card-title">Custom Emojis &amp; Stickers</h3>
-              <p class="card-copy">SWM keeps the atmosphere warm and expressive with server personality built right into conversations.</p>
+              <p class="card-copy">SWM keeps the atmosphere expressive with server personality built right into conversations.</p>
             </article>
 
             <article class="feature-card reveal">
@@ -1210,7 +1298,7 @@
             <article class="feature-card reveal">
               <div class="feature-icon">🤖</div>
               <h3 class="card-title">Native Bots</h3>
-              <p class="card-copy">Plantwithme, studywithme, and Strix support community routines, verification, and member management inside SWM.</p>
+              <p class="card-copy">Our bots support community routines, while our verification system helps keep the server organized and secure.</p>
             </article>
 
             <article class="feature-card reveal">
@@ -1228,126 +1316,8 @@
             <article class="feature-card reveal">
               <div class="feature-icon">🏆</div>
               <h3 class="card-title">Recognition Systems</h3>
-              <p class="card-copy">Weekly and monthly leaderboards, class-based halls, and voting perks celebrate consistency and contribution.</p>
+              <p class="card-copy">Weekly and monthly leaderboards, class-based and voting perks celebrate consistency and contribution.</p>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Resources -->
-      <section id="resources">
-        <div class="container">
-          <div class="eyebrow reveal">Resources Hub</div>
-          <h2 class="section-heading reveal">The most important server references are all gathered here in one clean place.</h2>
-          <p class="section-copy reveal">
-            These cards make it easier for members to find the information they need quickly, from starting out in the server to understanding expectations and finding the right spaces.
-          </p>
-
-          <div class="resource-grid">
-            <article class="resource-card reveal">
-              <div class="resource-media">
-                <img src="./SWM-FAQs.png" alt="Study With Me FAQs preview">
-              </div>
-              <div class="resource-topline">FAQ</div>
-              <h3 class="card-title">Frequently asked questions</h3>
-              <p class="card-copy">Expandable answers for the questions members ask most about verification, studying, safety, apps, and participation.</p>
-              <div class="resource-actions">
-                <a class="button button-primary" href="#faq">Open FAQ</a>
-                <button class="pill" type="button" data-placeholder="More FAQ entries can be added here next.">More soon</button>
-              </div>
-            </article>
-
-            <article class="resource-card reveal">
-              <div class="resource-media">
-                <img src="./Images/SWM-SERVER-GUIDE.png" alt="Study With Me server guide preview">
-              </div>
-              <div class="resource-topline">Server Guide</div>
-              <h3 class="card-title">Start strong inside the community</h3>
-              <p class="card-copy">A clearer path for new members, from joining and verification to picking the right channels and routines.</p>
-              <div class="resource-actions">
-                <a class="button button-primary" href="#guide">Open Guide</a>
-                <button class="pill" type="button" data-placeholder="The full server guide will be added here next.">Coming soon</button>
-              </div>
-            </article>
-
-            <article class="resource-card reveal">
-              <div class="resource-media">
-                <img src="./Images/SWM-OUR-CHANNELS.png" alt="Study With Me channels preview">
-              </div>
-              <div class="resource-topline">Our Channels</div>
-              <h3 class="card-title">Know where everything lives</h3>
-              <p class="card-copy">A visual map of community spaces, accountability rooms, resource zones, support areas, and course-specific expansions.</p>
-              <div class="resource-actions">
-                <a class="button button-primary" href="#channels">View Channels</a>
-                <button class="pill" type="button" data-placeholder="A fuller channels directory can be added here next.">More soon</button>
-              </div>
-            </article>
-
-            <article class="resource-card reveal">
-              <div class="resource-media">
-                <img src="./Images/SWM-STUDENT-HANDBOOK.png" alt="Study With Me handbook preview">
-              </div>
-              <div class="resource-topline">Student Handbook</div>
-              <h3 class="card-title">Community standards and expectations</h3>
-              <p class="card-copy">Rules, behavioral expectations, and moderation boundaries presented in a cleaner format than a plain text document.</p>
-              <div class="resource-actions">
-                <a class="button button-primary" href="#handbook">Read Handbook</a>
-                <button class="pill" type="button" data-placeholder="The full handbook can be expanded here next.">More soon</button>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section id="faq">
-        <div class="container">
-          <div class="eyebrow reveal">FAQ</div>
-          <h2 class="section-heading reveal">Quick answers for the questions members usually ask first.</h2>
-          <p class="section-copy reveal">
-            These answers cover the most common starting points for new and returning members.
-          </p>
-
-          <div class="faq-grid">
-            <details class="faq-item reveal" open>
-              <summary>What is Study With Me?</summary>
-              <div class="faq-answer">Study With Me is a global Discord server centered around focused study, accountability, and a student-friendly support system. Members use the space to study together, stay consistent, find resources, and participate in a community that understands academic pressure.</div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>Why does SWM use member verification?</summary>
-              <div class="faq-answer">Verification helps protect the server and maintain a safer environment. Strix handles the process and removes users who do not complete verification within 48 hours, helping the community stay secure and intentional.</div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>What are the main study tools inside the server?</summary>
-              <div class="faq-answer">SWM uses native tools like plantwithme, studywithme, and Strix, along with accountability groups for apps such as Forest and YPT. These systems help members build habits, track participation, and stay engaged.</div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>Are there spaces for different kinds of students?</summary>
-              <div class="faq-answer">Yes. The server includes a variety of channels for general studying, focus sessions, resources, community support, and future course-specific spaces so members can find the environment that fits them best.</div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>Does SWM offer anything beyond study rooms?</summary>
-              <div class="faq-answer">Absolutely. Members can access digital library spaces, use stickers and emojis, join recognition systems like weekly and monthly leaderboards, and participate in a broader student community culture.</div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>How do leaderboards and recognition work?</summary>
-              <div class="faq-answer">SWM highlights members through weekly leaderboards, the Hall of Legends, Hall of Class I Users, and voting perks. These systems are designed to recognize consistency, effort, and contribution to the community.</div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>Can I find course-specific channels now?</summary>
-              <div class="faq-answer">That part is planned next. The website already includes a placeholder for a future “See Available Specific Course Channels” button so we can add the feature cleanly when you are ready.</div>
-            </details>
-
-            <details class="faq-item reveal">
-              <summary>Will more detailed guides be added here?</summary>
-              <div class="faq-answer">Yes. This site is designed to grow with the server, so more detailed references, guides, and resource sections can be added over time as the community expands.</div>
-            </details>
           </div>
         </div>
       </section>
@@ -1355,96 +1325,52 @@
       <!-- Server Guide -->
       <section id="guide">
         <div class="container">
-          <div class="eyebrow reveal">Server Guide</div>
-          <h2 class="section-heading reveal">A clearer onboarding path makes the server easier to trust and easier to use.</h2>
-          <p class="section-copy reveal">
-            This section gives new members a quick understanding of how to enter the server, get verified, locate useful spaces, and build a study flow.
-          </p>
+          <div class="section-intro reveal">
+            <div class="eyebrow">Server Guide</div>
+            <h2 class="section-heading">A simple onboarding path helps new members settle in faster.</h2>
+            <p class="section-copy">
+              Start with the basics, finish the required setup, complete verification, and then head straight into the study spaces that fit your preferred way of working.
+            </p>
+          </div>
 
           <div class="guide-grid">
             <article class="guide-card reveal">
               <div class="guide-step">01</div>
               <h3 class="card-title">Join the server</h3>
-              <p class="card-copy">Start with the invite and land in a guided entry space that introduces the community tone and next steps.</p>
+              <p class="card-copy">Enter the community and begin with the main welcome flow so you understand how the server is organized from the start.</p>
               <ul>
-                <li>Present invite, welcome note, and first actions clearly</li>
-                <li>Set expectations before members reach the full server</li>
+                <li>Use the invite link to enter SWM</li>
+                <li>Read the initial welcome and orientation information</li>
               </ul>
             </article>
 
             <article class="guide-card reveal">
               <div class="guide-step">02</div>
-              <h3 class="card-title">Complete verification</h3>
-              <p class="card-copy">Strix verification keeps SWM safer and more focused, while the 48-hour rule prevents abandoned access.</p>
+              <h3 class="card-title">Finish onboarding</h3>
+              <p class="card-copy">Choose the right roles and settings first so the server can open up the spaces that match your profile and preferences.</p>
               <ul>
-                <li>Explain why verification exists</li>
-                <li>Clarify Strix autokick timing for inactive unverified users</li>
+                <li>Set your channels and roles preferences</li>
+                <li>Choose academic roles through enrollment if needed</li>
               </ul>
             </article>
 
             <article class="guide-card reveal">
               <div class="guide-step">03</div>
-              <h3 class="card-title">Choose where to begin</h3>
-              <p class="card-copy">Once verified, members can head into study rooms, app groups, the library, or social support spaces.</p>
+              <h3 class="card-title">Complete verification</h3>
+              <p class="card-copy">Verification is required before you can access chat and join the study voice channels, helping keep the space safer and more organized.</p>
               <ul>
-                <li>Highlight best first-stop channels for new students</li>
-                <li>Show where app-based accountability groups live</li>
+                <li>Verify in the dedicated verification channel</li>
+                <li>Confirm your access before moving into the main server spaces</li>
               </ul>
             </article>
 
             <article class="guide-card reveal">
               <div class="guide-step">04</div>
-              <h3 class="card-title">Build your routine</h3>
-              <p class="card-copy">The goal is not just to join, but to stay consistent through systems, recognition, and repeatable study habits.</p>
+              <h3 class="card-title">Join study rooms</h3>
+              <p class="card-copy">Pick the room style that matches how you study best, whether that means silent rooms, on-cam spaces, pomodoro rooms, or collaborative voice rooms.</p>
               <ul>
-                <li>Point members toward leaderboards and library resources</li>
-                <li>Encourage long-term participation over one-time visits</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Channels -->
-      <section id="channels">
-        <div class="container">
-          <div class="eyebrow reveal">Our Channels</div>
-          <h2 class="section-heading reveal">Organized spaces help members know where to focus, ask, and contribute.</h2>
-          <p class="section-copy reveal">
-            Instead of listing every single channel right now, this first version groups the server into practical categories. That keeps the site clean now and makes it easy to expand into a searchable course-channel directory later.
-          </p>
-
-          <div class="channel-grid">
-            <article class="channel-card featured reveal">
-              <h3 class="card-title">Core study spaces</h3>
-              <p class="card-copy">The rooms members return to most often for studying, accountability, and consistency.</p>
-              <ul>
-                <li>Focus-oriented channels for quiet study and productivity</li>
-                <li>App-linked accountability spaces for Forest, YPT, and future study tools</li>
-                <li>Supportive community rooms that help members stay encouraged</li>
-              </ul>
-              <div class="channel-foot">
-                <button class="button button-secondary" type="button" data-placeholder="We can wire this to a real channel directory or modal later.">See Available Specific Course Channels</button>
-              </div>
-            </article>
-
-            <article class="channel-card reveal">
-              <h3 class="card-title">Libraries &amp; resources</h3>
-              <p class="card-copy">Academic and leisure reading zones give members access to both useful materials and enjoyable reading.</p>
-              <ul>
-                <li>Academic library for coursework, reference material, and study support</li>
-                <li>Leisure library for lighter reading and community enjoyment</li>
-                <li>Resource-sharing spaces for study tips, systems, and useful references</li>
-              </ul>
-            </article>
-
-            <article class="channel-card reveal">
-              <h3 class="card-title">Recognition &amp; community life</h3>
-              <p class="card-copy">SWM is more than productivity. It also rewards and celebrates the people who help keep the space active.</p>
-              <ul>
-                <li>Weekly and monthly leaderboard spaces</li>
-                <li>Hall of Legends and Hall of Class I Users recognition</li>
-                <li>Voting perks and community participation incentives</li>
+                <li>Study Lounge Rooms for quiet general focus</li>
+                <li>Study-On-Cam, Custom, Pomodoro, and Voice Study Rooms are available</li>
               </ul>
             </article>
           </div>
@@ -1454,11 +1380,13 @@
       <!-- Handbook -->
       <section id="handbook">
         <div class="container">
-          <div class="eyebrow reveal">Student Handbook</div>
-          <h2 class="section-heading reveal">Rules should feel clear, fair, and easy to understand at a glance.</h2>
-          <p class="section-copy reveal">
-            This section frames the handbook as polished website content rather than a long wall of text, making the rules easier to scan and understand.
-          </p>
+          <div class="section-intro reveal">
+            <div class="eyebrow">Student Handbook</div>
+            <h2 class="section-heading">Rules should feel fair and easy to understand at a glance.</h2>
+            <p class="section-copy">
+              The handbook keeps the community respectful, safe, and focused. These core principles give members a quick read on what SWM expects from everyone inside the server.
+            </p>
+          </div>
 
           <div class="handbook-grid">
             <article class="rule-card reveal">
@@ -1494,43 +1422,302 @@
         </div>
       </section>
 
+      <!-- Channels -->
+      <section id="channels">
+        <div class="container">
+          <div class="section-intro reveal">
+            <div class="eyebrow">Our Channels</div>
+            <h2 class="section-heading">A large server works better when every space has a clear purpose.</h2>
+            <p class="section-copy">
+              Here is a preview of our channels inside the server.
+            </p>
+          </div>
+
+          <div class="channels-accordion">
+            <details class="channel-group reveal" open>
+              <summary><span><span class="channel-group-count">8</span>School Admin</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">The essential channels for rules, updates, verification, enrollment, and private support.</p>
+                <ul class="channel-list">
+                  <li><strong>📢・announcements</strong><span>Official server updates.</span></li>
+                  <li><strong>📒・student-handbook</strong><span>Our server rules.</span></li>
+                  <li><strong>✅・verify-here</strong><span>Verify to chat and join voice channels.</span></li>
+                  <li><strong>🔑・server-guide</strong><span>Guide to help you navigate the server.</span></li>
+                  <li><strong>❓・faqs</strong><span>Frequently asked questions in this server.</span></li>
+                  <li><strong>🇵🇭・enrollment / 🌎・enrollment</strong><span>Get academic roles.</span></li>
+                  <li><strong>🎖・deans-office</strong><span>Submit private reports and concerns.</span></li>
+                  <li><strong>🆘・help-desk</strong><span>Ask server-related questions.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">8</span>Student Center</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Recognition, introductions, surveys, and the wider student-facing life of the server.</p>
+                <ul class="channel-list">
+                  <li><strong>📣・bulletin-board</strong><span>For surveys, PSAs, and forms.</span></li>
+                  <li><strong>🌟・swm-legends</strong><span>Our hall of study legends.</span></li>
+                  <li><strong>🏆・leaderboard</strong><span>Top weekly study buddies are posted here.</span></li>
+                  <li><strong>📋・class-rank</strong><span>Log of voice ranks and class levels earned.</span></li>
+                  <li><strong>👋🏼・introduce-yourself</strong><span>Say hi and share a bit about you.</span></li>
+                  <li><strong>🎂・birthday-bash</strong><span>Set and celebrate your birthday.</span></li>
+                  <li><strong>🗳・suggestions</strong><span>Drop ideas to improve the server.</span></li>
+                  <li><strong>🚀・server-boosters</strong><span>Server booster logs.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">4</span>Study Lounge</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">General study-adjacent spaces for chatting, help, media, and music around the main study lounge rooms.</p>
+                <ul class="channel-list">
+                  <li><strong>💬・lobby</strong><span>General chat for the server.</span></li>
+                  <li><strong>💭・homework-help</strong><span>Ask for academic help.</span></li>
+                  <li><strong>📸・class-pictures</strong><span>Send pictures together with your study buddies.</span></li>
+                  <li><strong>🎧・study-music</strong><span>Interface for music while in SRs.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">3</span>Study On-Cam Rooms</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">The supporting channels for members using the stricter on-cam study spaces.</p>
+                <ul class="channel-list">
+                  <li><strong>🚫・sor-rules</strong><span>Rules specifically for SORs.</span></li>
+                  <li><strong>⚡・cam-alerts</strong><span>Alerts when your camera turns off while in an SOR.</span></li>
+                  <li><strong>💬・sor-chat</strong><span>General chat for those in an SOR.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">3</span>Custom Study Rooms</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Guidance and tools for members using customizable study spaces.</p>
+                <ul class="channel-list">
+                  <li><strong>🚫・csr-rules</strong><span>Rules specifically for CSRs.</span></li>
+                  <li><strong>📱・csr-commands</strong><span>Interface for customizing CSRs.</span></li>
+                  <li><strong>🎧・csr-music</strong><span>Interface for music while in CSRs.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">4</span>Pomodoro Rooms</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Timed focus rooms and the tools that support task tracking while studying in pomodoro mode.</p>
+                <ul class="channel-list">
+                  <li><strong>🕛・pomo-1</strong><span>Pomodoro timer interface for the first pomodoro room.</span></li>
+                  <li><strong>🕑・pomo-2</strong><span>Pomodoro timer interface for the second pomodoro room.</span></li>
+                  <li><strong>🕒・pomo-3</strong><span>Pomodoro timer interface for the third pomodoro room.</span></li>
+                  <li><strong>☑️・pomodoro-tasks</strong><span>Make a to-do list while in a pomodoro room.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">2</span>Voice Study Rooms</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Rules and music tools for collaborative voice-based study spaces.</p>
+                <ul class="channel-list">
+                  <li><strong>🚫・vsr-rules</strong><span>Rules specifically for VSRs.</span></li>
+                  <li><strong>🎧・vsr-music</strong><span>Interface for music while in VSRs.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">6</span>Productivity Tools</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Useful tools that help members switch modes, track time, stay organized, and find accountability.</p>
+                <ul class="channel-list">
+                  <li><strong>🔴・study-mode</strong><span>Toggle between study and default mode.</span></li>
+                  <li><strong>🍪・cookie-zone</strong><span>Deposit your study hours here after joining a voice channel.</span></li>
+                  <li><strong>☑️・to-do-list</strong><span>Make a to-do list.</span></li>
+                  <li><strong>⏰・reminders</strong><span>Set reminders for anything.</span></li>
+                  <li><strong>🌲・forest</strong><span>Plant and join sessions with study buddies.</span></li>
+                  <li><strong>🤓・study-buddies</strong><span>Find your study buddy.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">5</span>Library</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Helpful utility tools and access to the StudyWithMe Digital Library.</p>
+                <ul class="channel-list">
+                  <li><strong>🔤・dictionary</strong><span>Look up the meaning of words.</span></li>
+                  <li><strong>🔢・calculator</strong><span>Solve math problems.</span></li>
+                  <li><strong>🔣・unit-converter</strong><span>Convert units quickly.</span></li>
+                  <li><strong>🔗・short-url-generator</strong><span>Shorten URLs.</span></li>
+                  <li><strong>StudyWithMe Digital Library</strong><span>Available here for members who purchase a Library Card at 😻・mimu.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">3</span>External Affairs</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Partnership and creator-facing channels connected to the broader SWM network.</p>
+                <ul class="channel-list">
+                  <li><strong>🌐・partner-servers</strong><span>View our server partners.</span></li>
+                  <li><strong>🤖・partner-bots</strong><span>View our bot partners.</span></li>
+                  <li><strong>🔗・plugs</strong><span>Content creator plugs.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">1</span>School Grounds</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Academic spaces that open based on the roles a member has selected.</p>
+                <ul class="channel-list">
+                  <li><strong>Specific academic channels</strong><span>Available depending on your academic roles.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">8</span>Freedom Wall</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Wellness, journaling, reflection, celebration, and lighter community interaction spaces.</p>
+                <ul class="channel-list">
+                  <li><strong>📝・daily-journal</strong><span>Share your thoughts anonymously.</span></li>
+                  <li><strong>💭・virtual-space</strong><span>Share interesting posts that can motivate others.</span></li>
+                  <li><strong>🤔・qotd</strong><span>Answer questions of the week.</span></li>
+                  <li><strong>🎉・victory-bash</strong><span>Celebrate your wins, big or small.</span></li>
+                  <li><strong>⭐・starboard</strong><span>Posts with 20 or more star reactions shine here.</span></li>
+                  <li><strong>🤡・memes</strong><span>Drop your favorite memes here.</span></li>
+                  <li><strong>🤪・emoji-war</strong><span>Spam channel for random cookie drops.</span></li>
+                  <li><strong>💯・counting</strong><span>Count until someone messes up.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">4</span>Socials</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Social rooms and supporting spaces for bonding beyond academics.</p>
+                <ul class="channel-list">
+                  <li><strong>🚫・sr-rules</strong><span>Rules specifically for Social Rooms.</span></li>
+                  <li><strong>📱・sr-commands</strong><span>Interface for customizing Social Rooms.</span></li>
+                  <li><strong>🎧・soundtrip</strong><span>Interface for music while in Social Rooms.</span></li>
+                  <li><strong>💬・hallway</strong><span>General chat to bond beyond academics.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">3</span>Events Corner</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">The event-facing corner for reminders, giveaways, and attendance.</p>
+                <ul class="channel-list">
+                  <li><strong>📣・event-reminders</strong><span>Announcement channel for server events.</span></li>
+                  <li><strong>🎊・giveaway</strong><span>Join our giveaways.</span></li>
+                  <li><strong>🎟・rsvp</strong><span>Mark your attendance for future events.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">4</span>School Clubs</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Interest-based spaces where members can connect through hobbies and shared interests outside studying.</p>
+                <ul class="channel-list">
+                  <li><strong>Interest club channels</strong><span>Anime, art, asian-dramas, astrology, books, dance, films, food, health-and-wellness, games, kpop, manga, manhwa, music, pets, photography, poetry-and-prose, tech, and tv-series.</span></li>
+                  <li><strong>💻・online-shop-finds</strong><span>Share shop recommendations and reviews.</span></li>
+                  <li><strong>🛒・marketplace</strong><span>Sell your stuff here.</span></li>
+                  <li><strong>🥊・fitness-freaks</strong><span>General chat for fitness-focused members.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">3</span>Shopping Center</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Server spaces for sharing finds, selling items, and future merch drops.</p>
+                <ul class="channel-list">
+                  <li><strong>💻・online-shop-finds</strong><span>Share shop recommendations and reviews.</span></li>
+                  <li><strong>🛒・marketplace</strong><span>Sell your stuff here.</span></li>
+                  <li><strong>👕・merch</strong><span>Opening soon.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">5</span>Gym</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Wellness and fitness spaces for goals, routines, and challenges.</p>
+                <ul class="channel-list">
+                  <li><strong>🥊・fitness-freaks</strong><span>General chat for fitness freaks.</span></li>
+                  <li><strong>💪🏼・fitness-goals</strong><span>Share your goals, no matter how big or small.</span></li>
+                  <li><strong>✊🏻・fitness-challenge</strong><span>Post challenges, compete, and conquer.</span></li>
+                  <li><strong>🧘🏻・workout-routine</strong><span>Drop your routines and flex your consistency.</span></li>
+                  <li><strong>🍌・healthy-recipes</strong><span>Share healthy meals and snack hacks.</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="channel-group reveal">
+              <summary><span><span class="channel-group-count">5</span>Dormitory</span></summary>
+              <div class="channel-group-body">
+                <p class="channel-group-copy">Bots, games, role purchases, and the AFK space all live here.</p>
+                <ul class="channel-list">
+                  <li><strong>👾・bot-spam</strong><span>Access bots here.</span></li>
+                  <li><strong>🖼・gartic</strong><span>Play guess the picture.</span></li>
+                  <li><strong>🐠・lawliet</strong><span>Fishery channel and games.</span></li>
+                  <li><strong>😻・mimu</strong><span>Access Mimu commands and buy roles here.</span></li>
+                  <li><strong>😴・AFK</strong><span>Inactive users for an hour are moved here.</span></li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+
       <!-- Recognition -->
       <section>
         <div class="container">
-          <div class="eyebrow reveal">Leaderboards &amp; Recognition</div>
-          <h2 class="section-heading reveal">Recognition keeps consistency visible and makes participation feel meaningful.</h2>
-          <p class="section-copy reveal">
-            This section turns your recognition systems into a strong feature of the site instead of leaving them buried in server text. It also sets up space for future dynamic leaderboards if you ever want live data.
-          </p>
+          <div class="section-intro reveal">
+            <div class="eyebrow">Leaderboards &amp; Recognition</div>
+            <h2 class="section-heading">Recognition keeps consistency visible and makes participation feel meaningful.</h2>
+            <p class="section-copy">
+Our automated ranking system highlights the most dedicated study buddies through daily, weekly, and seasonal leaderboards. This constant visibility ensures that hard work is recognized and provides a clear view of community engagement.
+</p>
+
 
           <div class="leaderboard-grid">
             <article class="leaderboard-card reveal">
               <div class="leaderboard-topline">Weekly</div>
-              <h3 class="card-title">Weekly leaderboards</h3>
-              <p class="card-copy">A recurring spotlight for members who show up consistently and keep their study momentum visible.</p>
+              <h3 class="card-title">Study Leaderboards</h3>
+              <p class="card-copy">A recurring spotlight for members who maintain consistent study momentum and visible progress.</p>
               <ul>
-                <li>Great for short-term motivation and healthy accountability</li>
+                <li>Boosts short-term motivation and accountability</li>
                 <li>Encourages regular engagement across the week</li>
               </ul>
             </article>
 
             <article class="leaderboard-card reveal">
               <div class="leaderboard-topline">Monthly</div>
-              <h3 class="card-title">Hall of Legends &amp; Class I users</h3>
-              <p class="card-copy">Longer-form recognition for members whose effort, presence, and contribution shape the server culture.</p>
+              <h3 class="card-title">Hall of Legends</h3>
+              <p class="card-copy">Long-form recognition for members whose presence and effort shape our server culture.</p>
               <ul>
-                <li>Creates an aspirational system members can grow into</li>
-                <li>Celebrates contribution, not just isolated bursts of activity</li>
+                <li>Celebrates sustained contribution over time</li>
+                <li>Creates an aspirational goal for the community</li>
               </ul>
             </article>
 
             <article class="leaderboard-card reveal">
               <div class="leaderboard-topline">Perks</div>
-              <h3 class="card-title">Voting perks</h3>
-              <p class="card-copy">Recognition can also lead to community privileges, giving active members a more meaningful role in server life.</p>
+              <h3 class="card-title">Rank & Boost Rewards</h3>
+              <p class="card-copy">Exclusive animated roles and gradient tags that highlight your standing in the community.</p>
               <ul>
-                <li>Rewards participation in ways members can actually feel</li>
-                <li>Supports a stronger sense of ownership and belonging</li>
+                <li>Provides tangible rewards for active participation</li>
+                <li>Unlocks unique cosmetic and functional server perks</li>
               </ul>
             </article>
           </div>
@@ -1540,11 +1727,13 @@
       <!-- About -->
       <section id="about">
         <div class="container">
-          <div class="eyebrow reveal">About Us</div>
-          <h2 class="section-heading reveal">Study With Me is built around focused studying, safety, and community care.</h2>
-          <p class="section-copy reveal">
-            SWM started in 2020 and has grown into a large worldwide student server that still feels guided and intentional. The goal is not simply to host a Discord server, but to create a study environment people can actually rely on.
-          </p>
+          <div class="section-intro reveal">
+            <div class="eyebrow">About Us</div>
+            <h2 class="section-heading">Study With Me is built around focused studying, safety, and community care.</h2>
+            <p class="section-copy">
+              SWM started in 2020 and has grown into a large worldwide study server that still feels guided and intentional. The goal is not just to gather members, but to create a study environment people can genuinely rely on.
+            </p>
+          </div>
 
           <div class="about-grid">
             <article class="about-card reveal">
@@ -1565,14 +1754,156 @@
         </div>
       </section>
 
+      <!-- FAQ -->
+      <section id="faq">
+        <div class="container">
+          <div class="section-intro reveal">
+            <div class="eyebrow">FAQs</div>
+            <h2 class="section-heading">Quick answers to the questions members ask most often.</h2>
+            <p class="section-copy">
+              These FAQs come from the server guide materials and cover access, study modes, pomodoro use, support, and finding the right spaces inside SWM.
+            </p>
+          </div>
+
+          <div class="faq-grid">
+            <details class="faq-item reveal" open>
+              <summary>Why can't I chat or join VCs?</summary>
+              <div class="faq-answer">
+                <p>If you have no access to the channels or you are unverified, make sure to get the required roles in Channels &amp; Roles and complete verification in ✅・verify-here.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Where is the general chat?</summary>
+              <div class="faq-answer">
+                <p>You can chat in 💬・lobby. You can also talk with other study buddies in the linked chat for each voice channel.</p>
+                <p>There is also a 💬・hallway for those in social rooms, though it is viewable only if you are in default mode.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Why are channels muted?</summary>
+              <div class="faq-answer">
+                <p>Voice channels are muted to simulate silent study rooms and minimize distractions. If you prefer talking, use the Voice Study Rooms or Custom Study Rooms.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Is this server for Filipinos only? What does "ARAL" mean?</summary>
+              <div class="faq-answer">
+                <p>No. While the server was created by a Filipino and initially catered to fellow Filipino study buddies, it has grown into a more diverse community.</p>
+                <p>Most members are still Filipino, but everyone is welcome. "ARAL" means study.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>I chose study mode. How can I switch to default mode to see all the channels?</summary>
+              <div class="faq-answer">
+                <p>You can switch modes anytime in 🔴・study-mode or in Channels &amp; Roles.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>How do I modify my roles?</summary>
+              <div class="faq-answer">
+                <p>You can change your optional roles in Channels &amp; Roles.</p>
+                <p>For academic roles, use 🇵🇭・enrollment for Filipinos or 🌎・enrollment for foreigners.</p>
+                <p>For Filipinos who want to select a graduate program, choose the post-graduate or alumni role first.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Where can I find study buddies?</summary>
+              <div class="faq-answer">
+                <p>You can find study buddies in 🤓・study-buddies. You can also join any unlocked voice channel to study with others.</p>
+                <p>For 💭・homework-help, remember that the server is not a tutoring service. You may ask for guidance, explanations, or validation of your approach, but not for direct answers to quizzes, modules, or exams.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>I want to connect with people in the same program as me. Where are the channels?</summary>
+              <div class="faq-answer">
+                <p>Choose your academic levels and programs in 🇵🇭・enrollment for Filipinos or 🌎・enrollment for foreigners. Specific academic channels open depending on your academic roles.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Where do I get personality or color roles? How do I get my MBTI tag?</summary>
+              <div class="faq-answer">
+                <p>You can choose optional roles in Channels &amp; Roles.</p>
+                <p>Certain rank roles have animated vibrant gradient colors. MBTI tags, gemstones, and zodiac signs can be bought using study cookies in 😻・mimu. Flower roles are exclusive to server boosters.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Where can I send surveys, questionnaires, or PSAs?</summary>
+              <div class="faq-answer">
+                <p>Use 📣・bulletin-board for surveys, PSAs, and forms.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>How do the Pomodoro channels work?</summary>
+              <div class="faq-answer">
+                <p>The pomodoro system helps you study in focused intervals alongside other buddies. There are three dedicated Pomodoro voice channels, each with its own synced timer.</p>
+                <ul>
+                  <li>POMO 1 uses a 200/10 focus and break pattern.</li>
+                  <li>POMO 2 uses a 50/10 pattern.</li>
+                  <li>POMO 3 uses a 50/10 pattern.</li>
+                </ul>
+                <p>You only see a pomodoro timer after joining its matching voice channel. You can still interact with the timer even though the interface is read-only. If you fail to mark your presence for three consecutive pomodoro sessions, you will be removed from the pomodoro channel.</p>
+                <p>Use ☑️・pomodoro-tasks to log tasks while in a pomodoro room, and use the VC chat box for light conversation during breaks.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>How do I gain role ranks or badges?</summary>
+              <div class="faq-answer">
+                <p>Read about rank roles in the SWM Rank Roles guide.</p>
+                <ul>
+                  <li>Class Levels I to V are permanent and are based on message and voice XP.</li>
+                  <li>Voice Ranks from Newbie to Mythic reset every 6 months and are based on voice XP.</li>
+                  <li>Top Study Buddies reset weekly and are based on voice XP.</li>
+                  <li>Best Buddy resets every 12 hours and is based on voting.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Do you host events?</summary>
+              <div class="faq-answer">
+                <p>Yes, SWM has hosted events in the past. There are no events at the moment, but you can check 📣・event-reminders for updates.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>How can I reach out to the mods for a private concern?</summary>
+              <div class="faq-answer">
+                <p>Open a ticket at 🎖・deans-office.</p>
+              </div>
+            </details>
+
+            <details class="faq-item faq-item-wide reveal">
+              <summary>How can the Study With Me Discord Server help me?</summary>
+              <div class="faq-answer">
+                <p>SWM can help you stay motivated, reduce isolation, build productive habits, learn from others, and connect with peers across time zones.</p>
+                <p>Whether you are preparing for exams, working on assignments, or tackling a personal learning project, the server is designed to improve productivity and make studying feel less lonely.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
       <!-- Join -->
       <section id="join">
         <div class="container">
-          <div class="eyebrow reveal">Join SWM</div>
-          <h2 class="section-heading reveal">Join a study community built for consistency, structure, and support.</h2>
-          <p class="section-copy reveal">
-            StudyWithMe welcomes students, professionals, and exam takers who want a more reliable environment for focused work. If you are looking for accountability, safer study spaces, and a global group of peers who understand the process, this is where to start.
-          </p>
+          <div class="section-intro reveal">
+            <div class="eyebrow">Join SWM</div>
+            <h2 class="section-heading">Join a study community built for consistency, structure, and support.</h2>
+            <p class="section-copy">
+              StudyWithMe welcomes students, professionals, and exam takers who want a more reliable environment for focused work. If you are looking for accountability, safer study spaces, and a global group of peers who understand the process, this is where to start.
+            </p>
+          </div>
 
           <div class="join-wrap">
             <div class="join-panel reveal">
@@ -1619,9 +1950,11 @@
         <div class="footer-bar">
           <div>© 2026 Study With Me, est. 2020</div>
           <div class="footer-links">
-            <a href="#faq">FAQ</a>
+            <a href="#highlights">Community Highlights</a>
             <a href="#guide">Server Guide</a>
             <a href="#handbook">Student Handbook</a>
+            <a href="#channels">Our Channels</a>
+            <a href="#about">About Us</a>
             <a href="#join">Join SWM</a>
           </div>
         </div>
