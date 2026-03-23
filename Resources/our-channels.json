@@ -1,53 +1,190 @@
 {
   "title": "Our Channels",
+  "note": "Some channels require default mode or specific roles to view.",
   "groups": [
     {
-      "name": "Core Study Spaces",
-      "description": "The rooms members return to most often for focused work, accountability, and consistent study habits.",
+      "name": "School Admin",
+      "description": "The essential channels for rules, updates, verification, enrollment, and private support.",
       "channels": [
-        "Study Lounge Rooms for silent general study",
-        "Study-On-Cam Rooms for strict on-cam accountability",
-        "Pomodoro Rooms with automated focus and break timers",
-        "Voice Study Rooms for tutoring and collaborative sessions",
-        "Custom Study Rooms for flexible private or semi-private setups"
+        { "name": "📢・announcements", "description": "Official server updates." },
+        { "name": "📒・student-handbook", "description": "Our server rules." },
+        { "name": "✅・verify-here", "description": "Verify to chat and join voice channels." },
+        { "name": "🔑・server-guide", "description": "Guide to help members navigate the server." },
+        { "name": "❓・faqs", "description": "Frequently asked questions in this server." },
+        { "name": "🇵🇭・enrollment / 🌎・enrollment", "description": "Get academic roles." },
+        { "name": "🎖・deans-office", "description": "Submit private reports." },
+        { "name": "🆘・help-desk", "description": "Ask server-related questions." }
       ]
     },
     {
-      "name": "Libraries and Resources",
-      "description": "Spaces built to support both academic needs and lighter reading.",
+      "name": "Student Center",
+      "description": "Recognition, introductions, surveys, and broader student-facing spaces.",
       "channels": [
-        "Academic library spaces for study support and learning materials",
-        "Leisure library spaces for reading beyond coursework",
-        "Resource-sharing spaces for useful study systems and references"
+        { "name": "📣・bulletin-board", "description": "For surveys, PSAs, and forms." },
+        { "name": "🌟・swm-legends", "description": "Our hall of study legends." },
+        { "name": "🏆・leaderboard", "description": "Top weekly study buddies are posted here." },
+        { "name": "📋・class-rank", "description": "Log of voice ranks and class levels earned." },
+        { "name": "👋🏼・introduce-yourself", "description": "Say hi and share a bit about you." },
+        { "name": "🎂・birthday-bash", "description": "Set and celebrate your birthday." },
+        { "name": "🗳・suggestions", "description": "Drop ideas to improve the server." },
+        { "name": "🚀・server-boosters", "description": "Server booster logs." }
       ]
     },
     {
-      "name": "Community and Wellness",
-      "description": "Channels that help the server stay human, supportive, and sustainable.",
+      "name": "Study Lounge",
+      "description": "General study-adjacent spaces surrounding the main silent study rooms.",
       "channels": [
-        "Interest Clubs for members with shared hobbies and interests",
-        "Freedom Wall for anonymous journaling and mental health expression",
-        "Supportive community spaces for encouragement and connection"
+        { "name": "💬・lobby", "description": "General chat for the server." },
+        { "name": "💭・homework-help", "description": "Ask for academic help." },
+        { "name": "📸・class-pictures", "description": "Send pictures together with your study buddies." },
+        { "name": "🎧・study-music", "description": "Interface for music while in SRs." }
       ]
     },
     {
-      "name": "Recognition and Participation",
-      "description": "Spaces that celebrate consistency and meaningful contribution.",
+      "name": "Study On-Cam Rooms",
+      "description": "Supporting channels for the stricter on-cam study setup.",
       "channels": [
-        "Weekly leaderboard spaces",
-        "Monthly recognition spaces",
-        "SWM Hall of Legends",
-        "SWM Hall of Class I Users",
-        "Voting perks and participation incentives"
+        { "name": "🚫・sor-rules", "description": "Rules specifically for SORs." },
+        { "name": "⚡・cam-alerts", "description": "Alerts when a camera turns off while in an SOR." },
+        { "name": "💬・sor-chat", "description": "General chat for those in an SOR." }
       ]
     },
     {
-      "name": "Future Expansion",
-      "description": "Planned growth areas for the server as the website and community continue to evolve.",
+      "name": "Custom Study Rooms",
+      "description": "Tools and rules for members using customizable study rooms.",
       "channels": [
-        "Course-specific channels",
-        "Expanded app accountability groups",
-        "More detailed guides for finding the right spaces quickly"
+        { "name": "🚫・csr-rules", "description": "Rules specifically for CSRs." },
+        { "name": "📱・csr-commands", "description": "Interface for customizing CSRs." },
+        { "name": "🎧・csr-music", "description": "Interface for music while in CSRs." }
+      ]
+    },
+    {
+      "name": "Pomodoro Rooms",
+      "description": "Timed focus spaces and task-tracking support for pomodoro users.",
+      "channels": [
+        { "name": "🕛・pomo-1 / 🕑・pomo-2 / 🕒・pomo-3", "description": "Pomodoro timers for those in pomo rooms." },
+        { "name": "☑️・pomodoro-tasks", "description": "Make a to-do list while in a pomodoro room." }
+      ]
+    },
+    {
+      "name": "Voice Study Rooms",
+      "description": "Collaborative study spaces where members can communicate.",
+      "channels": [
+        { "name": "🚫・vsr-rules", "description": "Rules specifically for VSRs." },
+        { "name": "🎧・vsr-music", "description": "Interface for music while in VSRs." }
+      ]
+    },
+    {
+      "name": "Productivity Tools",
+      "description": "Useful systems that support accountability, reminders, and study tracking.",
+      "channels": [
+        { "name": "🔴・study-mode", "description": "Toggle between study and default mode." },
+        { "name": "🍪・cookie-zone", "description": "Deposit your study hours here after joining a voice channel." },
+        { "name": "☑️・to-do-list", "description": "Make a to-do list." },
+        { "name": "⏰・reminders", "description": "Set reminders for anything." },
+        { "name": "🌲・forest", "description": "Plant and join sessions with study buddies." },
+        { "name": "🤓・study-buddies", "description": "Find your study buddy." }
+      ]
+    },
+    {
+      "name": "Library",
+      "description": "Utility channels and access to the StudyWithMe Digital Library.",
+      "channels": [
+        { "name": "🔤・dictionary", "description": "Look up the meaning of words here." },
+        { "name": "🔢・calculator", "description": "Solve math problems." },
+        { "name": "🔣・unit-converter", "description": "Useful for converting units." },
+        { "name": "🔗・short-url-generator", "description": "Shorten URLs." },
+        { "name": "StudyWithMe Digital Library", "description": "Available here for members who purchase a Library Card at 😻・mimu." }
+      ]
+    },
+    {
+      "name": "External Affairs",
+      "description": "Channels for partnerships, creators, and outside-facing connections.",
+      "channels": [
+        { "name": "🌐・partner-servers", "description": "View our server partners." },
+        { "name": "🤖・partner-bots", "description": "View our bot partners." },
+        { "name": "🔗・plugs", "description": "Content creator plugs." }
+      ]
+    },
+    {
+      "name": "School Grounds",
+      "description": "Academic spaces that depend on the academic roles a member has selected.",
+      "channels": [
+        { "name": "Specific academic channels", "description": "Available depending on your academic roles." }
+      ]
+    },
+    {
+      "name": "Freedom Wall",
+      "description": "Wellness, journaling, reflection, celebration, and lighter community spaces.",
+      "channels": [
+        { "name": "📝・daily-journal", "description": "Share your thoughts anonymously." },
+        { "name": "💭・virtual-space", "description": "Share interesting posts that can motivate others." },
+        { "name": "🤔・qotd", "description": "Answer questions of the week." },
+        { "name": "🎉・victory-bash", "description": "Celebrate your wins, big or small." },
+        { "name": "⭐・starboard", "description": "Posts with 20+ star reacts shine here." },
+        { "name": "🤡・memes", "description": "Drop your favorite memes here." },
+        { "name": "🤪・emoji-war", "description": "Spam channel for random cookie drops." },
+        { "name": "💯・counting", "description": "Count until someone messes up." }
+      ]
+    },
+    {
+      "name": "Socials",
+      "description": "Social rooms and supporting spaces for bonding beyond academics.",
+      "channels": [
+        { "name": "🚫・sr-rules", "description": "Rules specifically for Social Rooms." },
+        { "name": "📱・sr-commands", "description": "Interface for customizing Social Rooms." },
+        { "name": "🎧・soundtrip", "description": "Interface for music while in Social Rooms." },
+        { "name": "💬・hallway", "description": "General chat to bond beyond academics." }
+      ]
+    },
+    {
+      "name": "Events Corner",
+      "description": "The event-facing corner for reminders, giveaways, and attendance.",
+      "channels": [
+        { "name": "📣・event-reminders", "description": "Announcement channel for server events." },
+        { "name": "🎊・giveaway", "description": "Join our giveaways." },
+        { "name": "🎟・rsvp", "description": "Mark your attendance for future events." }
+      ]
+    },
+    {
+      "name": "School Clubs",
+      "description": "Interest-based spaces for hobbies, friendships, and life beyond studying.",
+      "channels": [
+        { "name": "Interest club channels", "description": "Anime, art, asian-dramas, astrology, books, dance, films, food, health-and-wellness, games, kpop, manga, manhwa, music, pets, photography, poetry-and-prose, tech, and tv-series." },
+        { "name": "💻・online-shop-finds", "description": "Share shop recommendations and reviews." },
+        { "name": "🛒・marketplace", "description": "Sell your stuff here." },
+        { "name": "🥊・fitness-freaks", "description": "General chat for fitness freaks." }
+      ]
+    },
+    {
+      "name": "Shopping Center",
+      "description": "Shopping-related spaces and future merch drops.",
+      "channels": [
+        { "name": "💻・online-shop-finds", "description": "Share shop recommendations and reviews." },
+        { "name": "🛒・marketplace", "description": "Sell your stuff here." },
+        { "name": "👕・merch", "description": "Opening soon." }
+      ]
+    },
+    {
+      "name": "Gym",
+      "description": "Fitness and wellness spaces for goals, routines, and challenges.",
+      "channels": [
+        { "name": "🥊・fitness-freaks", "description": "General chat for fitness freaks." },
+        { "name": "💪🏼・fitness-goals", "description": "Share your goals, no matter how big or small." },
+        { "name": "✊🏻・fitness-challenge", "description": "Post challenges, compete, and conquer." },
+        { "name": "🧘🏻・workout-routine", "description": "Drop your routines and flex your consistency." },
+        { "name": "🍌・healthy-recipes", "description": "Share healthy meals and snack hacks." }
+      ]
+    },
+    {
+      "name": "Dormitory",
+      "description": "Bots, games, role purchases, and the AFK channel.",
+      "channels": [
+        { "name": "👾・bot-spam", "description": "Access bots here." },
+        { "name": "🖼・gartic", "description": "Play guess the picture." },
+        { "name": "🐠・lawliet", "description": "Fishery channel and games." },
+        { "name": "😻・mimu", "description": "Access Mimu commands and buy roles here." },
+        { "name": "😴・AFK", "description": "Inactive users for an hour are moved here." }
       ]
     }
   ]

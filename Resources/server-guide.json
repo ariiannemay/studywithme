@@ -1,16 +1,33 @@
 {
   "title": "Server Guide",
-  "subtitle": "A 24/7 online productivity-focused community for students, professionals, and lifelong learners.",
   "intro": "StudyWithMe is a 24/7 online productivity-focused community where students, professionals, and lifelong learners from around the world come together for focus, support, motivation, and accountability.",
-  "notices": [
-    "If you do not yet have access to chat and voice channels, complete verification in verify-here.",
-    "If you are a newcomer to the server, you can only enable your camera, stream, or speak in voice channels 12 hours after joining."
+  "steps": [
+    {
+      "step": 1,
+      "title": "Join the server",
+      "description": "Enter SWM through the invite link and begin with the main welcome flow."
+    },
+    {
+      "step": 2,
+      "title": "Finish onboarding",
+      "description": "Set your channels and roles preferences, then choose academic roles through enrollment if needed."
+    },
+    {
+      "step": 3,
+      "title": "Complete verification",
+      "description": "If you do not yet have access to chat and voice channels, complete verification in verify-here."
+    },
+    {
+      "step": 4,
+      "title": "Join study rooms",
+      "description": "Choose the study room style that fits your routine and start focusing."
+    }
   ],
   "voiceChannelTypes": [
     {
       "name": "Study Lounge Rooms",
       "shortName": "SRs",
-      "description": "General-purpose silent study rooms where you may turn on your camera, screenshare, or stay on voice. These rooms are muted by default."
+      "description": "General-purpose silent study rooms. You can open your camera, screenshare, or stay on voice. These rooms are muted by default."
     },
     {
       "name": "Study-On-Cam Rooms",
@@ -20,23 +37,23 @@
     {
       "name": "Custom Study Rooms",
       "shortName": "CSRs",
-      "description": "Customizable rooms that can be renamed, muted or unmuted, limited, locked, or unlocked. Anyone can join an unlocked CSR, but only members with a Class IV role or higher can create one. Members should read csr-rules before joining."
+      "description": "Fully customizable rooms. Members can rename the room, mute or unmute it, limit who can join, and lock or unlock it. Anyone can join an unlocked CSR, but only those with a Class IV role or higher can create one."
     },
     {
       "name": "Pomodoro Rooms",
       "shortName": "POMO",
-      "description": "Rooms equipped with a Pomodoro timer powered by LionBot, with automated announcements for focus sessions and breaks. These rooms are muted."
+      "description": "Study rooms equipped with a Pomodoro timer powered by LionBot, which announces focus sessions and breaks. These rooms are muted."
     },
     {
       "name": "Voice Study Rooms",
       "shortName": "VSRs",
-      "description": "Study rooms where members may unmute and communicate. These are ideal for tutoring sessions or collaborative studying. Members should read vsr-rules before joining."
+      "description": "Study rooms that allow members to unmute and communicate. These are ideal for tutoring sessions or collaborative studying."
     }
   ],
-  "howToStart": [
-    "Choose any study room, enter it, and begin focusing.",
-    "When you are done, check your study hours and rank using the /profile command in bot-spam.",
-    "You can deposit your study hours to earn cookies and unlock roles in the Cookie Zone."
+  "notes": [
+    "If you are a newcomer to the server, you can only enable your camera, stream, or speak in voice channels 12 hours after joining.",
+    "Once you are done studying, you can check your study hours and rank by using the /profile command in bot-spam.",
+    "You can also deposit your study hours to earn cookies and unlock roles in the Cookie Zone."
   ],
   "staffRoles": [
     {
@@ -53,7 +70,7 @@
     },
     {
       "role": "Buddy Patrol",
-      "description": "A Buddy Patrol serves as the frontline moderator of the server. They monitor activity, respond to reports, delete inappropriate messages, and mute, time out, kick, or ban disruptive members when necessary."
+      "description": "A Buddy Patrol serves as the frontline moderator of the server. They monitor activity, respond to reports, delete inappropriate messages, and mute, time out, kick, or ban disruptive members when necessary to maintain order and focus."
     }
   ]
 }

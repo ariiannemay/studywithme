@@ -1,37 +1,127 @@
 {
-  "title": "FAQ",
+  "title": "FAQs",
   "items": [
     {
-      "question": "What is StudyWithMe?",
-      "answer": "StudyWithMe is a global Discord server centered around focused study, accountability, and a supportive environment for students, professionals, and exam takers."
+      "question": "Why can't I chat or join VCs?",
+      "answer": [
+        "If you have no access to the channels or you are unverified, make sure to get the required roles in Channels & Roles and complete verification in verify-here."
+      ]
     },
     {
-      "question": "Why does SWM use member verification?",
-      "answer": "Verification helps protect the server and maintain a safer environment. Strix manages the process and removes users who do not complete verification within 48 hours."
+      "question": "Where is the general chat?",
+      "answer": [
+        "You can chat in lobby.",
+        "You can also chat with other study buddies in the linked chat in each voice channel.",
+        "There is also a hallway for those in social rooms, which is viewable only if you are in default mode."
+      ]
     },
     {
-      "question": "What kinds of study rooms are available?",
-      "answer": "Members can choose from Study Lounge Rooms, Study-On-Cam Rooms, Custom Study Rooms, Pomodoro Rooms, and Voice Study Rooms, depending on how they prefer to work."
+      "question": "Why are channels muted?",
+      "answer": [
+        "Voice channels are muted to simulate silent study rooms and minimize distractions.",
+        "If you prefer talking, use the Voice Study Rooms or Custom Study Rooms."
+      ]
     },
     {
-      "question": "What are the main study tools inside the server?",
-      "answer": "SWM uses native tools like plantwithme, studywithme, and Strix, alongside accountability groups for apps such as Forest and YPT."
+      "question": "Is this server for Filipinos only? What is ARAL?",
+      "answer": [
+        "No. While the server was created by a Filipino and initially catered to fellow Filipino study buddies, it has grown into a more diverse community.",
+        "Most members are still Filipino, but everyone is welcome.",
+        "ARAL means study."
+      ]
     },
     {
-      "question": "Does SWM offer anything beyond study rooms?",
-      "answer": "Yes. The server also includes wellness and community spaces such as Interest Clubs, a Freedom Wall, digital library areas, and recognition systems."
+      "question": "I chose study mode. How can I switch to default mode to see all the channels?",
+      "answer": [
+        "You can switch modes anytime in study-mode or in Channels & Roles."
+      ]
     },
     {
-      "question": "How do leaderboards and recognition work?",
-      "answer": "SWM highlights members through weekly leaderboards, monthly recognition, the Hall of Legends, Hall of Class I Users, and voting-based perks."
+      "question": "How do I modify my roles?",
+      "answer": [
+        "You can change your optional roles in Channels & Roles.",
+        "For academic roles, use enrollment for Filipinos or foreigners.",
+        "For Filipinos who want to select a graduate program, choose the post-graduate or alumni role first."
+      ]
     },
     {
-      "question": "Are there spaces for different kinds of students?",
-      "answer": "Yes. SWM includes a variety of channels for focused study, accountability, resources, support, and future course-specific spaces."
+      "question": "Where can I find study buddies?",
+      "answer": [
+        "You can find study buddies in study-buddies.",
+        "You can also join any unlocked voice channel to study with others.",
+        "For homework-help, remember that the server is not a tutoring service. Guidance, explanations, and validation are allowed, but direct answers to quizzes, modules, or exams are not."
+      ]
     },
     {
-      "question": "Will more detailed guides be added here?",
-      "answer": "Yes. The website can keep expanding with fuller reference pages, deeper guides, and more detailed resource sections over time."
+      "question": "I want to connect with people with the same program as me. Where are the channels?",
+      "answer": [
+        "Choose your academic levels and programs in enrollment.",
+        "Specific academic channels are available depending on your academic roles."
+      ]
+    },
+    {
+      "question": "Where do I get personality or color roles? How do I get my MBTI tag?",
+      "answer": [
+        "You can choose optional roles in Channels & Roles.",
+        "Certain rank roles have animated vibrant gradient colors.",
+        "MBTI tags, gemstones, and zodiac signs can be bought using study cookies in mimu.",
+        "Flower roles are exclusive to server boosters."
+      ]
+    },
+    {
+      "question": "Where can I send surveys, questionnaires, or PSAs?",
+      "answer": [
+        "Use bulletin-board for surveys, PSAs, and forms."
+      ]
+    },
+    {
+      "question": "How do the Pomodoro channels work?",
+      "answer": [
+        "The pomodoro system helps members study in focused intervals alongside other buddies. There are three dedicated Pomodoro voice channels, each with its own synced timer.",
+        "Members only see a Pomodoro timer after joining its matching voice channel.",
+        "Members can still interact with the timer even though the interface is read-only.",
+        "If a member fails to mark their presence for three consecutive pomodoro sessions, they will be removed from the pomodoro channel.",
+        "Use pomodoro-tasks to log tasks while in any Pomodoro room."
+      ],
+      "highlights": [
+        "POMO 1 uses a 200/10 pattern.",
+        "POMO 2 uses a 50/10 pattern.",
+        "POMO 3 uses a 50/10 pattern."
+      ]
+    },
+    {
+      "question": "How do I gain role ranks or badges?",
+      "answer": [
+        "Read about role ranks in the SWM Rank Roles guide."
+      ],
+      "highlights": [
+        "Class Levels I to V are permanent and based on message and voice XP.",
+        "Voice Ranks from Newbie to Mythic reset every 6 months and are based on voice XP.",
+        "Top Study Buddies reset weekly and are based on voice XP.",
+        "Best Buddy resets every 12 hours and is based on voting."
+      ]
+    },
+    {
+      "question": "Do you host events?",
+      "answer": [
+        "Yes, SWM has hosted events in the past.",
+        "There are no events at the moment, but members can check event-reminders for updates."
+      ]
+    },
+    {
+      "question": "How can I reach out to the mods for a private concern?",
+      "answer": [
+        "Open a ticket at deans-office."
+      ]
+    },
+    {
+      "question": "How can the Study With Me Discord Server help me?",
+      "answer": [
+        "It can help members stay motivated by studying alongside other people.",
+        "It reduces isolation by making studying feel more communal.",
+        "It helps members build productive habits and structure their routines.",
+        "It creates opportunities to ask questions, share knowledge, and connect with others across time zones."
+      ]
     }
   ]
 }
