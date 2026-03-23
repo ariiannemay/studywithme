@@ -413,7 +413,8 @@
       display: flex;
       flex-wrap: wrap;
       gap: 0.9rem;
-      width: min(100%, 22rem);
+      margin-top: 1.7rem;
+      width: min(100%, 38rem);
     }
 
     .hero-meta {
@@ -823,7 +824,14 @@
       margin-top: 2.75rem;
     }
 
-    .channel-group {
+    .handbook-accordion {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2.75rem;
+    }
+
+    .channel-group,
+    .handbook-group {
       border-radius: var(--radius-lg);
       border: 1px solid var(--line);
       background: var(--paper);
@@ -832,7 +840,8 @@
       backdrop-filter: blur(18px);
     }
 
-    .channel-group summary {
+    .channel-group summary,
+    .handbook-group summary {
       list-style: none;
       cursor: pointer;
       display: flex;
@@ -844,11 +853,13 @@
       font-size: 1rem;
     }
 
-    .channel-group summary::-webkit-details-marker {
+    .channel-group summary::-webkit-details-marker,
+    .handbook-group summary::-webkit-details-marker {
       display: none;
     }
 
-    .channel-group summary::after {
+    .channel-group summary::after,
+    .handbook-group summary::after {
       content: "+";
       width: 2rem;
       height: 2rem;
@@ -861,12 +872,14 @@
       flex-shrink: 0;
     }
 
-    .channel-group[open] summary::after {
+    .channel-group[open] summary::after,
+    .handbook-group[open] summary::after {
       content: "−";
       background: rgba(252, 224, 0, 0.22);
     }
 
-    .channel-group-body {
+    .channel-group-body,
+    .handbook-group-body {
       padding: 0 1.3rem 1.3rem;
     }
 
@@ -922,6 +935,83 @@
     .channel-list span {
       color: var(--ink-soft);
       font-size: 0.82rem;
+      line-height: 1.7;
+    }
+
+    .handbook-group-copy {
+      margin: 0 0 1rem;
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+      line-height: 1.8;
+    }
+
+    .handbook-rule-list {
+      display: grid;
+      gap: 0.9rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .handbook-rule-item {
+      padding: 1rem;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.54);
+    }
+
+    html[data-theme="dark"] .handbook-rule-item {
+      background: rgba(8, 29, 41, 0.82);
+    }
+
+    .handbook-rule-top {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .handbook-rule-id {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 3rem;
+      padding: 0.38rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(252, 224, 0, 0.2);
+      color: var(--teal);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .handbook-rule-title {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+
+    .handbook-rule-body {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.84rem;
+      line-height: 1.75;
+    }
+
+    .handbook-rule-body + .handbook-rule-body {
+      margin-top: 0.7rem;
+    }
+
+    .handbook-inline-list {
+      margin: 0.7rem 0 0;
+      padding-left: 1.1rem;
+      color: var(--ink-soft);
+    }
+
+    .handbook-inline-list li {
+      margin: 0.45rem 0;
+      font-size: 0.84rem;
       line-height: 1.7;
     }
 
@@ -1254,6 +1344,9 @@
             <p class="hero-text" style="text-align: justify;">
               StudyWithMe is a 24/7 online community where students &amp; professionals study and work together for focus, support, motivation and accountability.  Established in <strong>2020</strong>, it is a professional, welcoming Discord space built for students who want accountability, and productivity. From verified access and accountability groups, shared libraries, and recognition systems, SWM is designed to make staying consistent feel easier.
             </p>
+            <div class="hero-actions">
+              <a class="button button-primary" style="display: block; width: 100%; text-align: center;" href="https://discord.gg/studywithme" target="_blank" rel="noreferrer">Join SWM</a>
+            </div>
           </div>
 
           <div class="hero-visual reveal">
@@ -1266,10 +1359,6 @@
         </div>
 
         <div class="hero-bottom reveal">
-          <div class="hero-actions">
-            <a class="button button-primary" style="display: block; width: 100%; text-align: center;" href="https://discord.gg/studywithme" target="_blank" rel="noreferrer">Join SWM</a>
-          </div>
-
           <div class="hero-meta">
             <article class="stat-card">
               <div class="stat-number">40,000+</div>
@@ -1416,40 +1505,198 @@
             <div class="eyebrow">Student Handbook</div>
             <h2 class="section-heading">Rules should feel fair and easy to understand at a glance.</h2>
             <p class="section-copy">
-              The handbook keeps the community respectful, safe, and focused. These core principles give members a quick read on what SWM expects from everyone inside the server.
+              The handbook keeps the community respectful, safe, and focused. These four main sections follow the structure of the official handbook and make the rules easier to browse.
             </p>
           </div>
 
-          <div class="handbook-grid">
-            <article class="rule-card reveal">
-              <h3 class="card-title">Respect the learning space</h3>
-              <p class="card-copy">Members should help protect a calm, supportive environment where people can focus without harassment, hostility, or disruption.</p>
-              <ul>
-                <li>Respect other members and moderators</li>
-                <li>Keep interactions constructive and appropriate for a student community</li>
-                <li>Do not disrupt shared study spaces</li>
-              </ul>
-            </article>
+          <div class="handbook-accordion">
+            <details class="handbook-group reveal" open>
+              <summary>AS A STUDY BUDDY</summary>
+              <div class="handbook-group-body">
+                <p class="handbook-group-copy">These are the baseline expectations for every member using the server.</p>
+                <ul class="handbook-rule-list">
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_1</span>
+                      <h3 class="handbook-rule-title">Most Important Rule: READ</h3>
+                    </div>
+                    <p class="handbook-rule-body">Always read announcements, instructions, and pinned posts to know how to use the channels properly.</p>
+                    <p class="handbook-rule-body">See the <strong>server guide</strong> for a quick overview of available server features.</p>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_2</span>
+                      <h3 class="handbook-rule-title">Personal Information</h3>
+                    </div>
+                    <p class="handbook-rule-body">Do not publish or share personal information without one's consent, in and out of Discord. This includes posting screenshots and videos on other social media sites.</p>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_3</span>
+                      <h3 class="handbook-rule-title">Display Photo and Name</h3>
+                    </div>
+                    <p class="handbook-rule-body">No offensive and vulgar nicknames are allowed. Display photos should not contain any offensive or illegal content.</p>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_4</span>
+                      <h3 class="handbook-rule-title">Respect Everyone</h3>
+                    </div>
+                    <p class="handbook-rule-body">Trolling is prohibited in the server. Do not be disruptive or make other study buddies feel uncomfortable. Do not deliberately incite drama. Respect other people's opinions.</p>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_5</span>
+                      <h3 class="handbook-rule-title">Incitement</h3>
+                    </div>
+                    <p class="handbook-rule-body">Do not encourage others to break rules or incite others to be blatantly rude and offensive. Promoting or encouraging conflicts between other members is an offense in the server.</p>
+                    <p class="handbook-rule-body">This may result in punitive measures for both rule-breakers and those encouraging rule-breaking.</p>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_6</span>
+                      <h3 class="handbook-rule-title">Violation of Discord Community Guidelines</h3>
+                    </div>
+                    <p class="handbook-rule-body">Discord itself has specific behavioral and content guidelines. Not following those guidelines may result in an instant ban.</p>
+                    <ul class="handbook-inline-list">
+                      <li>You must be at least 13 years of age to use Discord.</li>
+                      <li>Sharing sexually explicit content of minors, whether real or animated, is prohibited.</li>
+                      <li>Glorifying self-harm or suicide is not allowed.</li>
+                      <li>Sharing pirated or illegally acquired software or stolen accounts is prohibited.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </details>
 
-            <article class="rule-card reveal">
-              <h3 class="card-title">Use access responsibly</h3>
-              <p class="card-copy">Verification, account safety, and honest participation help keep SWM trustworthy and useful.</p>
-              <ul>
-                <li>Complete verification within the required timeframe</li>
-                <li>Do not misuse bots, automated systems, or privileged roles</li>
-                <li>Protect your account and server access</li>
-              </ul>
-            </article>
+            <details class="handbook-group reveal">
+              <summary>BUDDY-TO-BUDDY INTERACTION</summary>
+              <div class="handbook-group-body">
+                <p class="handbook-group-copy">These rules help keep interaction respectful, safe, and appropriate for a study-centered community.</p>
+                <ul class="handbook-rule-list">
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_7</span>
+                      <h3 class="handbook-rule-title">Offensive and Hate Speech</h3>
+                    </div>
+                    <p class="handbook-rule-body">Sending hate speech, including racial slurs or derivatives, sexist or homophobic statements, and similar content, is strictly prohibited.</p>
+                    <p class="handbook-rule-body">Refrain from posting offensive content and harsh comments in topics such as politics, religion, and other serious topics.</p>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_8</span>
+                      <h3 class="handbook-rule-title">Bullying and Harassment</h3>
+                    </div>
+                    <p class="handbook-rule-body">Do not insult others or send aggressive messages to other users.</p>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_9</span>
+                      <h3 class="handbook-rule-title">Respect the Moderators</h3>
+                    </div>
+                    <p class="handbook-rule-body">Do not insult your server moderators or attack them through private messages.</p>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_10</span>
+                      <h3 class="handbook-rule-title">Unnecessary Pings</h3>
+                    </div>
+                    <p class="handbook-rule-body">No unnecessary pings such as mass pings, ghost pings, and random pings. Frequent pings that are considered harassment or spam are not allowed.</p>
+                    <p class="handbook-rule-body">Mentioning @everyone, @here, or 10 or more users in a short span is not allowed and may result in a warning.</p>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_11</span>
+                      <h3 class="handbook-rule-title">Voice Channel Etiquette</h3>
+                    </div>
+                    <p class="handbook-rule-body">No vaping, smoking, or sleeping in public study rooms. Wear appropriate clothes when on camera. Tank tops are fine, but being topless is not allowed. Avoid making unnecessary noise when your microphone is turned on.</p>
+                    <p class="handbook-rule-body">When on cam, do not display distracting photos or videos. For SORs, virtual backgrounds, camera covers, or OBS overlays are not allowed. Moderators may disconnect, kick, or ban users without prior notice if these rules are willfully violated.</p>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_12</span>
+                      <h3 class="handbook-rule-title">Live Streaming</h3>
+                    </div>
+                    <p class="handbook-rule-body">Streaming games while inside the study rooms is strictly prohibited. No streaming of inappropriate content is allowed in any voice channel.</p>
+                  </li>
+                </ul>
+              </div>
+            </details>
 
-            <article class="rule-card reveal">
-              <h3 class="card-title">Contribute with care</h3>
-              <p class="card-copy">Resources, channel use, and public participation should make the server better for everyone, not noisier or harder to manage.</p>
-              <ul>
-                <li>Share useful resources responsibly</li>
-                <li>Stay on topic in specialized spaces</li>
-                <li>Follow moderator direction and handbook updates</li>
-              </ul>
-            </article>
+            <details class="handbook-group reveal">
+              <summary>CONTENT</summary>
+              <div class="handbook-group-body">
+                <p class="handbook-group-copy">These rules cover what members may and may not post, share, or promote inside the server.</p>
+                <ul class="handbook-rule-list">
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_13</span>
+                      <h3 class="handbook-rule-title">No Posting of NSFW Content</h3>
+                    </div>
+                    <p class="handbook-rule-body">Sending sexually explicit content and posting discussions of nudity, sexuality, violence, and similar material are strictly prohibited.</p>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_14</span>
+                      <h3 class="handbook-rule-title">No Advertising Unless Approved by the Council</h3>
+                    </div>
+                    <p class="handbook-rule-body">Posting or advertising servers, giveaways, unofficial tournaments, your own social media or content channels, or offering paid academic or assignment help services is not allowed unless approved by a moderator. Dropshipping and similar promotions are strictly prohibited.</p>
+                    <p class="handbook-rule-body">Posting Discord invite links without approval may result in a warning or stricter actions. Please check out our <strong>plugs</strong> channel and read the guidelines there.</p>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_15</span>
+                      <h3 class="handbook-rule-title">No Sending of Harmful Material</h3>
+                    </div>
+                    <p class="handbook-rule-body">Sending harmful materials such as GIF bugs, viruses, IP grabbers, or malware that cause malfunction on the server or on any member's hardware is prohibited.</p>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_16</span>
+                      <h3 class="handbook-rule-title">No Spamming</h3>
+                    </div>
+                    <p class="handbook-rule-body">No spamming is allowed in this server or in direct messages to server members. This includes image, text, link, emoji, and tag spam.</p>
+                    <ul class="handbook-inline-list">
+                      <li>Sending the same 8 or more messages in 5 seconds.</li>
+                      <li>Sending messages in 4 or more channels in 5 seconds.</li>
+                      <li>Uploading 12 or more attachments in 3 seconds.</li>
+                    </ul>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <div class="handbook-rule-top">
+                      <span class="handbook-rule-id">s_17</span>
+                      <h3 class="handbook-rule-title">No Academic Cheating</h3>
+                    </div>
+                    <p class="handbook-rule-body">Explicitly asking for answers for any module, quiz, exam question, and similar work is prohibited. Asking for opinions, validation, and how to solve is allowed.</p>
+                  </li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="handbook-group reveal">
+              <summary>DISCIPLINARY ACTIONS</summary>
+              <div class="handbook-group-body">
+                <p class="handbook-group-copy">If a study buddy fails to follow any of these rules, disciplinary action may be given.</p>
+                <ul class="handbook-rule-list">
+                  <li class="handbook-rule-item">
+                    <h3 class="handbook-rule-title">General escalation path</h3>
+                    <ul class="handbook-inline-list">
+                      <li>First to third offense: warning</li>
+                      <li>Fourth offense: the <strong>DETENTION</strong> role will be assigned</li>
+                      <li>Fifth offense and more: kick or permanent ban from the server</li>
+                    </ul>
+                  </li>
+                  <li class="handbook-rule-item">
+                    <h3 class="handbook-rule-title">Additional disciplinary notes</h3>
+                    <ul class="handbook-inline-list">
+                      <li>If a user's account appears to be compromised or hacked, they may be kicked from the server or assigned the <strong>DETENTION</strong> role as a precautionary measure.</li>
+                      <li>If a user is placed under the detention role and does not submit an appeal within 30 days, they may be removed from the server. Decisions are made on a case-by-case basis.</li>
+                      <li>Severe violations may be dealt with as needed. Moderators evaluate all posts based on Community Standards, Content Guidelines, Terms of Service, and Unique Channel Guidelines, and punishment remains at moderator discretion.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </details>
           </div>
         </div>
       </section>
@@ -1726,7 +1973,7 @@ Our automated ranking system highlights the most dedicated study buddies through
             <article class="leaderboard-card reveal">
               <div class="leaderboard-topline">Weekly</div>
               <h3 class="card-title">Study Leaderboards</h3>
-              <p class="card-copy">A recurring spotlight for members who maintain consistent study momentum and visible progress.</p>
+              <p class="card-copy">A spotlight for members who maintain consistent and active participation.</p>
               <ul>
                 <li>Boosts short-term motivation and accountability</li>
                 <li>Encourages regular engagement across the week</li>
