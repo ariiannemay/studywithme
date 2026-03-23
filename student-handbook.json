@@ -1,0 +1,118 @@
+{
+  "title": "Student Handbook",
+  "sections": [
+    {
+      "name": "As a Study Buddy",
+      "rules": [
+        {
+          "id": "s_1",
+          "title": "Most Important Rule: Read",
+          "body": "Always read announcements, instructions, and pinned posts to understand how each channel should be used properly. See the server overview channel for a quick guide to available features."
+        },
+        {
+          "id": "s_2",
+          "title": "Personal Information",
+          "body": "Do not publish or share personal information without consent, whether inside or outside Discord. This includes screenshots and videos shared on other social media sites."
+        },
+        {
+          "id": "s_3",
+          "title": "Display Photo and Name",
+          "body": "Offensive or vulgar nicknames are not allowed. Display photos must not contain offensive or illegal content."
+        },
+        {
+          "id": "s_4",
+          "title": "Respect Everyone",
+          "body": "Trolling is prohibited. Do not be disruptive or make other study buddies feel uncomfortable. Do not deliberately incite drama, and respect other people's opinions."
+        },
+        {
+          "id": "s_5",
+          "title": "Incitement",
+          "body": "Do not encourage others to break rules or to behave in rude or offensive ways. Promoting or encouraging conflicts between members is an offense and may lead to action for both the rule-breaker and the person encouraging the behavior."
+        },
+        {
+          "id": "s_6",
+          "title": "Violation of Discord Community Guidelines",
+          "body": "Members must follow Discord's Community Guidelines. Severe violations may result in an instant ban. This includes being under 13, sharing sexually explicit content involving minors, glorifying self-harm or suicide, or sharing pirated software or stolen accounts."
+        }
+      ]
+    },
+    {
+      "name": "Buddy-to-Buddy Interaction",
+      "rules": [
+        {
+          "id": "s_7",
+          "title": "Offensive and Hate Speech",
+          "body": "Hate speech, racial slurs, sexist or homophobic statements, and similar conduct are strictly prohibited. Avoid offensive content and harsh comments, especially around politics, religion, and other serious topics."
+        },
+        {
+          "id": "s_8",
+          "title": "Bullying and Harassment",
+          "body": "Do not insult others or send aggressive messages to other users."
+        },
+        {
+          "id": "s_9",
+          "title": "Respect the Moderators",
+          "body": "Do not insult server moderators or attack them through private messages."
+        },
+        {
+          "id": "s_10",
+          "title": "Unnecessary Pings",
+          "body": "Mass pings, ghost pings, random pings, and repeated pings that amount to harassment or spam are not allowed. Mentioning everyone, here, or ten or more users in a short span may lead to a warning."
+        },
+        {
+          "id": "s_11",
+          "title": "Voice Channel Etiquette",
+          "body": "No vaping, smoking, or sleeping in public study rooms. Wear appropriate clothing when on camera. Avoid unnecessary noise when your microphone is on. In SORs, virtual backgrounds, camera covers, and OBS overlays are not allowed because they defeat the purpose. Moderators may disconnect, kick, or ban users who willfully violate these rules."
+        },
+        {
+          "id": "s_12",
+          "title": "Live Streaming",
+          "body": "Streaming games inside study rooms is strictly prohibited. Inappropriate content may not be streamed in any voice channel."
+        }
+      ]
+    },
+    {
+      "name": "Content",
+      "rules": [
+        {
+          "id": "s_13",
+          "title": "No Posting of NSFW Content",
+          "body": "Sexually explicit content and discussions of nudity, sexuality, violence, and similar material are strictly prohibited."
+        },
+        {
+          "id": "s_14",
+          "title": "No Advertising Unless Approved by the Council",
+          "body": "Advertising servers, giveaways, unofficial tournaments, social media channels, or paid academic or assignment help is not allowed without moderator approval. Dropshipping and similar promotions are strictly prohibited. Posting Discord invite links without approval may result in a warning or stricter action."
+        },
+        {
+          "id": "s_15",
+          "title": "No Sending of Harmful Material",
+          "body": "Sending harmful materials such as GIF bugs, viruses, IP grabbers, or other malware that can cause malfunction on the server or on a member's device is prohibited."
+        },
+        {
+          "id": "s_16",
+          "title": "No Spamming",
+          "body": "No spamming is allowed in the server or in direct messages to server members. This includes image spam, text spam, link spam, emoji spam, and tag spam. Repeated rapid posting across messages, channels, or attachments may lead to a warning or mute."
+        },
+        {
+          "id": "s_17",
+          "title": "No Academic Cheating",
+          "body": "Explicitly asking for answers to modules, quizzes, exams, and similar academic assessments is prohibited. Asking for opinions, validation, or help with solving is allowed."
+        }
+      ]
+    }
+  ],
+  "disciplinaryActions": {
+    "summary": "If a study buddy fails to follow these rules, disciplinary action may be given.",
+    "escalationPath": [
+      "First to third offense: warning",
+      "Fourth offense: mute role",
+      "Fifth offense and beyond: kick or permanent ban"
+    ],
+    "notes": [
+      "If a user's account appears to be compromised or hacked, they may be kicked or muted as a precautionary measure.",
+      "If a user is placed under detention and does not submit an appeal within 30 days, they may be removed from the server.",
+      "Severe violations may be handled immediately at moderator discretion."
+    ]
+  }
+}
